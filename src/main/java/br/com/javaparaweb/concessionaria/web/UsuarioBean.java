@@ -2,6 +2,11 @@ package br.com.javaparaweb.concessionaria.web;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+@ManagedBean(name = "usuarioBean")
+@RequestScoped
 
 public class UsuarioBean {
 	private String nome;
