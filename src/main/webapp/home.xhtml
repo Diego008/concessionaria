@@ -5,7 +5,11 @@
 	</h:head>
 	
 	<h:body>
-		<h:outputText value="Olá Mundão"/>
+		<h:outputText value="Home"/>
+		
+		<h:form>
+			<h:commandLink action="#{usuarioBean.novo}" value="Cadastrar Novo Usuário" />
+		</h:form>
 	</h:body>
 	
 </html>

@@ -17,9 +17,11 @@
 			<h:outputLabel value="Email:" for="email" />
 			<h:inputText id="email" label="Email" value="#{usuarioBean.email}" required="true" />
 			<h:outputLabel value="Senha:" for="senha" />
-			<h:inputText id="senha" label="Senha" value="#{usuarioBean.senha}" required="true" />
+			<h:inputSecret id="senha" label="Senha" value="#{usuarioBean.senha}" required="true" />
 			<h:outputLabel value="Confirmar Senha:" for="confirmasenha" />
-			<h:inputText id="confirmasenha" label="Confirmar Senha" value="#{usuarioBean.confirmaSenha}" required="true" />
+			<h:inputText id="confirmasenha" label="Confirmar Senha" value="#{usuarioBean.confirmaSenha}" required="true" />			
+			<h:selectBooleanCheckbox value="#{usuarioBean.seguranca}" />
+			<h:outputLabel>Não sou um Robô</h:outputLabel>			
 			<h:outputText />
 			
 			<h:commandButton action="#{usuarioBean.salvar}" value="Salvar" />
